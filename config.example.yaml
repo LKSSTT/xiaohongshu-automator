@@ -1,0 +1,25 @@
+# Example Configuration for Xiaohongshu Automation
+
+# Account Settings
+account:
+  username: "your_username"
+  password: "your_password"
+
+# Proxy Settings
+proxy:
+  enabled: true
+  type: "http"  # or "socks"
+  address: "your_proxy_address"
+  port: your_proxy_port
+  username: "proxy_username"  # optional
+  password: "proxy_password"  # optional
+
+# Automation Tasks
+automation:
+  - task: "like post"
+    target: "post_id"
+    frequency: "daily"
+  - task: "comment on post"
+    target: "post_id"
+    message: "Great post!"
+    frequency: "weekly"
